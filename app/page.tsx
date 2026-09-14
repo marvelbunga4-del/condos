@@ -32,6 +32,8 @@ type CondoServer = {
   destination: string
 }
 
+const heroVideo = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e82oE-bwgg2qZXIH-9ANOiFHoRXwYgGuoGAgVDGUJK45oyB.mp4'
+
 const serverImages = [
   'https://i.ibb.co.com/WWCsWmyn/IMG-20260911-WA0026.jpg',
   'https://i.ibb.co.com/gbjgXB3Z/IMG-20260911-WA0025.jpg',
@@ -121,7 +123,20 @@ export default function Home() {
             <div className="hero-trust"><ShieldCheck /> Live player counts <span /> Updated automatically</div>
           </div>
           <div className="hero-media">
-            <img src={serverImages[0]} alt="A colorful Roblox condo server preview" />
+            <video
+              src={heroVideo}
+              autoPlay
+              muted
+              playsInline
+              preload="metadata"
+              poster={serverImages[0]}
+              aria-label="Condo Hub video preview"
+              onTimeUpdate={(event) => {
+                if (event.currentTarget.currentTime >= 5) {
+                  event.currentTarget.currentTime = 0
+                }
+              }}
+            />
             <div className="media-shade" />
             <div className="live-badge"><span /> LIVE</div>
             <div className="media-caption"><span>Condo Hub</span><small>Community server network</small></div>
