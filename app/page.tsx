@@ -185,7 +185,7 @@ export default function Home() {
               <div className="browser-actions"><button aria-label="Bookmark"><Bookmark /></button><button aria-label="More options"><Ellipsis /></button></div>
             </div>
             <div className="browser-content">
-              {iframeLoading && <div className="browser-loader"><div className="chrome-spinner" /><a href={selected.destination} target="_blank" rel="noreferrer">Click here if it doesn&apos;t open automatically</a></div>}
+              {iframeLoading && <div className="browser-loader"><div className="chrome-spinner" /></div>}
               <iframe src={selected.destination} title={`${selected.name} game`} onLoad={() => setIframeLoading(false)} sandbox="allow-scripts allow-same-origin allow-forms" />
             </div>
           </div>
