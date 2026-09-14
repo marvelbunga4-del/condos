@@ -181,7 +181,7 @@ export default function Home() {
             </div>
             <div className="browser-toolbar">
               <div className="browser-nav"><button aria-label="Back"><ArrowLeft /></button><button aria-label="Forward"><ArrowRight /></button><button aria-label="Reload" onClick={() => { setIframeLoading(true); setSelected({ ...selected }) }}><RotateCw /></button></div>
-              <div className="address-bar"><LockKeyhole /><span>roblox.com</span></div>
+              <div className="address-bar"><LockKeyhole /><span>roblox.com/condosgames</span></div>
               <div className="browser-actions"><button aria-label="Bookmark"><Bookmark /></button><button aria-label="More options"><Ellipsis /></button></div>
             </div>
             <div className="browser-content">
