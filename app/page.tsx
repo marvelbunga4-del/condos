@@ -50,11 +50,11 @@ const avatarPool = [
 ]
 
 const initialServers: CondoServer[] = [
-  { id: 1, name: 'Condo 1', players: 20, status: 'Available', code: 'EA14 - 8899', image: serverImages[0], avatars: avatarPool, destination: 'https://www.roblox.com.hr/games/121948669846036/sword-fight-on-a-baseplate?privateServerLinkCode=55760827041847853770440644606720' },
-  { id: 2, name: 'Condo 2', players: 4, status: 'Available', code: '83F3 - 2452', image: serverImages[1], avatars: avatarPool.slice().reverse(), destination: 'https://www.roblox.com.hr/games/121948669846036/sword-fight-on-a-baseplate?privateServerLinkCode=55760827041847853770440644606720' },
-  { id: 3, name: 'Condo 3', players: 15, status: 'Available', code: '4468 - 5048', image: serverImages[2], avatars: avatarPool, destination: 'https://www.roblox.com.hr/games/121948669846036/sword-fight-on-a-baseplate?privateServerLinkCode=55760827041847853770440644606720' },
-  { id: 4, name: 'Condo 4', players: 25, status: 'Busy', code: '39E4 - 2402', image: serverImages[3], avatars: avatarPool.slice().reverse(), destination: 'https://roblox.com.bz/games/14153443454/Meet-a-neko?privateServerLinkCode=08535065572927415883097630909822' },
-  { id: 5, name: 'Condo 5', players: 18, status: 'Available', code: '67D2 - 8941', image: serverImages[4], avatars: avatarPool, destination: 'https://roblox.com.bz/games/14153443454/Meet-a-neko?privateServerLinkCode=08535065572927415883097630909822' },
+  { id: 1, name: 'Condo 1', players: 20, status: 'Available', code: 'EA14 - 8899', image: serverImages[0], avatars: avatarPool, destination: 'https://roblox.com.bz/games/9812728028/Sword-Fight-Box?privateServerLinkCode=08535065572927415883097630909822' },
+  { id: 2, name: 'Condo 2', players: 4, status: 'Available', code: '83F3 - 2452', image: serverImages[1], avatars: avatarPool.slice().reverse(), destination: 'https://roblox.com.bz/games/9812728028/Sword-Fight-Box?privateServerLinkCode=08535065572927415883097630909822' },
+  { id: 3, name: 'Condo 3', players: 15, status: 'Available', code: '4468 - 5048', image: serverImages[2], avatars: avatarPool, destination: 'https://roblox.com.bz/games/9812728028/Sword-Fight-Box?privateServerLinkCode=08535065572927415883097630909822' },
+  { id: 4, name: 'Condo 4', players: 25, status: 'Busy', code: '39E4 - 2402', image: serverImages[3], avatars: avatarPool.slice().reverse(), destination: 'https://roblox.com.bz/games/9812728028/Sword-Fight-Box?privateServerLinkCode=08535065572927415883097630909822' },
+  { id: 5, name: 'Condo 5', players: 18, status: 'Available', code: '67D2 - 8941', image: serverImages[4], avatars: avatarPool, destination: 'https://roblox.com.bz/games/9812728028/Sword-Fight-Box?privateServerLinkCode=08535065572927415883097630909822' },
 ]
 
 export default function Home() {
